@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<!-- Placeholder for URL 
+	
+	<base href="https://www.ITChristos.com/" target="_blank"> 
+
+-->
+	
+	<title>CCNA Topics</title>
+	
+	<link rel="stylesheet" type="text/css" href="PanasChristosStyleSheet.css">
+	
+	<meta charset="UTF-8">
+	<meta name="keywords" content="CCNA, Network+, Security+, MTA, Linux+">
+	<meta name="description" content="Networking Certification study community">
+	<meta name="author" content="Christos Panas">
+	<meta http-equiv="refresh" content="300">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	
+</head>
+
+<body>
+
+    <div class="navbar">
+		<a href="PanasChristosHomePage.html" target="_self">Home</a>
+		<a href="about.html" target="_self">About</a>
+		<a class="active" href="table.html" target="_self">New CCNA Topics</a>
+		<a href="form.html" target="_self">Form</a>
+		<div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Certifications
+			<i class="fa fa-caret-down"></i>
+			</button>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#">CCNA</a>
+					<a href="#">Network+</a>
+					<a href="#">Security+</a>
+					<a href="#">Linux+</a>
+					<!--<a href="#">Future Certs</a>-->
+				</div>
+		</div>
+	  				<div class="contact">
+						<a href="mailto:georjiu@hotmail.com" title="georjiu@hotmail.com">Contact Me</a></div>	 
+	</div>
+	
+	<script>
+		/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+			function myFunction() 
+				{
+					document.getElementById("myDropdown").classList.toggle("show");
+				}
+
+		// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+	<h1>CCNA 200-301 Comparison</h1>
+	
+	<h3>ITChristos</h3>
+
+<div>
+<table>
+	<caption>CCNA Old Versus New Topics</caption>
+	<tr>
+		<th>Old CCNA</th>
+		<th>New CCNA</th>
+	</tr>
+	<tr>
+		<td>Network Fundamentals</td>
+		<td>Network Fundamentals</td>
+	</tr>
+	<tr>
+		<td>LAN Switching Technologies</td>
+		<td>Network Access</td>
+	</tr>
+	<tr>
+		<td>Routing Technologies</td>
+		<td>IP Connectivity</td>
+	</tr>
+	<tr>
+		<td>Infrastructure Services</td>
+		<td>IP Services</td>
+	</tr>
+	<tr>
+		<td>Infrastructure Security</td>
+		<td>Security Fundamentals</td>
+	</tr>
+	<tr>
+		<td>Infrastructure Management</td>
+		<td>Automation and Proframmability</td>
+</table>
+
+<table>
+	<caption>Obsolete Topics</caption>
+	<tr>
+		<th>Old CCNA</th>
+		<th>New CCNA</th>
+	</tr>
+	<tr>
+		<td>Network Fundamentals</td>
+		<td>OSI Model</td>
+	</tr>
+	<tr>
+		<td>LAN Switching Technologies</td>
+		<td>Ethernet Frame, Switch Stack, VTP</td>
+	</tr>
+	<tr>
+		<td>Routing Technologies</td>
+		<td>All EIGRP, Inter-vlan Routing, OSPFv3, RIPv2</td>
+	</tr>
+	<tr>
+		<td>WAN Technologies</td>
+		<td>PPP, MLPPP, PPPoE, GRE, BGP</td>
+	</tr>
+	<tr>
+		<td>Infrastructure Security</td>
+		<td>APIC-EM</td>
+	</tr>
+	<tr>
+		<td>Infrastructure Management</td>
+		<td>IOS Upgrade, IOS Tools, ICMP SLA</td>
+</table>
+</div>
+
+
+
+
+</body>
+
+</html>

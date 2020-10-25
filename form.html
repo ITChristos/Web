@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<!-- Placeholder for URL 
+	
+	<base href="https://www.ITChristos.com/" target="_blank"> 
+
+-->
+	
+	<title>Visitor Registration</title>
+	
+	<link rel="stylesheet" type="text/css" href="PanasChristosStyleSheet.css">
+	
+	<meta charset="UTF-8">
+	<meta name="keywords" content="CCNA, Network+, Security+, MTA, Linux+">
+	<meta name="description" content="Networking Certification study community">
+	<meta name="author" content="Christos Panas">
+	<meta http-equiv="refresh" content="300">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	
+</head>
+
+<body>
+
+    <div class="navbar">
+		<a href="PanasChristosHomePage.html" target="_self">Home</a>
+		<a href="about.html" target="_self">About</a>
+		<a href="table.html" target="_self">New CCNA Topics</a>
+		<a class="active" href="form.html" target="_self">Form</a>
+		<div class="dropdown">
+			<button class="dropbtn" onclick="myFunction()">Certifications
+			<i class="fa fa-caret-down"></i>
+			</button>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#">CCNA</a>
+					<a href="#">Network+</a>
+					<a href="#">Security+</a>
+					<a href="#">Linux+</a>
+					<!--<a href="#">Future Certs</a>-->
+				</div>
+		</div>
+	  				<div class="contact">
+						<a href="mailto:georjiu@hotmail.com" title="georjiu@hotmail.com">Contact Me</a></div>	 
+	</div>
+	
+	<script>
+		/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+			function myFunction() 
+				{
+					document.getElementById("myDropdown").classList.toggle("show");
+				}
+
+		// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+				var myDropdown = document.getElementById("myDropdown");
+				if (myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<h1>Sign in to my visitors log!</h1>
+
+<form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" target="_self" method="post" autocomplete="on">
+
+
+<!-- First name / Last name -->
+<h2>Name</h2>
+<fieldset>
+    <legend>Personals:</legend>
+	
+		<label for="fname">First Name:</label><br>
+		<input type="text" id="fname" name="fname">	<br>
+		
+		<label for="lname">Last Name:</label><br>
+		<input type="text" id="lname" name="lname"> <br>
+  
+		<label for="lname">Email Address:</label><br>
+		<input type="email" id="email" name="email"> <br>
+		
+		<label for="phone">Phone Number:</label><br>
+		<input type="tel" id="phone" name="phone"><br>
+
+<!--		
+		<label for="bday">Birtdate:</label><br>
+		<input type="date" id="bday" name="bday"><br>
+-->		
+
+<hr>	
+
+<!-- Gender -->	
+<h2>Gender</h2>	
+	<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+	<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+<hr>		
+		
+
+<!-- Checkbox -->
+
+<h2>Certifications you hold</h2>  
+  
+	<input type="checkbox" id="certification1" name="certification1" value="CCNA">
+		<label for="certification1"> I have my CCNA</label><br>
+	<input type="checkbox" id="certification2" name="certification2" value="Network+">
+		<label for="certification2"> I have my Network+</label><br>
+	<input type="checkbox" id="certification3" name="certification3" value="Security+">
+		<label for="certification3"> I have my Security+</label><br>
+	<input type="checkbox" id="certification4" name="certification4" value="Linux+">
+		<label for="certification4"> I have my Linux+</label><br>
+    <input type="checkbox" id="certification5" name="certification5" value="Other">
+		<label for="certification5"> Other:</label><input type="text" id="certification_other" name="certification_other"><br>
+  
+<hr>
+
+<!-- Multiple-option select list -->
+
+<h2>Reason for visiting</h2>
+
+	<label for="reason">Why did you come here?</label>
+		<select id="reason" name="reason" size="5" multiple>
+			<option value="career">Further my career</option>
+			<option value="curiosity">Pursue new interests</option>
+			<option value="school">School project</option>
+			<option value="social">To find like minded people</option>
+			<option value="other">Other</option>
+		</select><br>
+
+<hr>
+
+</fieldset>
+
+<fieldset>
+
+<legend>What's your story?</legend>
+<!-- Text Area -->
+
+<h2>Tell me about yourself!</h2>
+
+	<textarea onClick="javascript: this.value=''" name="about_user" style="width:800px; height:50px;">About Yourself...</textarea><br>
+	
+<hr>
+</fieldset>	
+<!-- Button Element -->
+
+<h2>Easter Egg!</h2>
+
+<button type="button" onclick="alert('All your base are belong to us!')">Click Me!</button>
+
+<hr>
+
+<fieldset>
+
+<input type="submit" value="Submit">
+<input type="reset">
+
+</fieldset>
+
+</form>
+
+
+</body>
+</html>

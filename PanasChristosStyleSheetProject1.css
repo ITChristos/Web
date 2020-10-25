@@ -1,0 +1,255 @@
+
+
+body 		{
+					background-image: url("Tesselated_Background.jpg");
+					background-color: #4F4A41;
+					background-repeat: no-repeat;
+					background-attachment: fixed;  
+					background-size: cover;
+					padding-top: 16px;
+				}
+
+/* Navbar container */
+.navbar 
+			{
+					/* overflow: hidden; */
+					background-color: #333;
+					font-family: Arial;
+					position: fixed;
+					top: 0;
+					width: 100%;
+				}
+
+/* Links inside the navbar */
+.navbar a 
+			{
+					float: left;
+					font-size: 16px;
+					color: white;
+					text-align: center;
+					padding: 14px 16px;
+					text-decoration: none;			
+				}
+
+/* The dropdown container */
+.dropdown 
+			{
+					float: left;
+					overflow: hidden;
+				}
+
+/* Dropdown button */
+.dropdown .dropbtn 
+			{
+					font-size: 16px;
+					border: none;
+					outline: none;
+					color: white;
+					padding: 14px 16px;
+					background-color: inherit;
+					font-family: inherit; /* Important for vertical align on mobile phones */
+					margin: 0; /* Important for vertical align on mobile phones */
+				}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn 
+			{
+					background-color: #45A29E;
+				}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content 
+			{
+					display: none;
+					position: absolute;
+					background-color: #f9f9f9;
+					min-width: 160px;
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					z-index: 1;
+				}
+
+/* Links inside the dropdown */
+.dropdown-content a 
+			{
+					float: none;
+					color: black;
+					padding: 12px 16px;
+					text-decoration: none;
+					display: block;
+					text-align: left;
+				}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover 
+			{
+					background-color: #ddd;
+				}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content 
+			{
+					display: block;
+				}
+				
+/* Shows the active tab in a highlighted color */
+.active
+			{
+					background-color: #FFCB9A;
+					color: white;
+				}
+/* Navbar button for contact information */
+.contact
+			{
+					overflow: hidden;
+					background-color: #333;
+					font-family: Arial;
+					float: right;
+				}				
+h1 			{
+					color: #66FCF1;
+					text-align: center;
+					text-decoration: underline;
+					background-color: Grey;
+				}
+
+h2 			{		
+					color: #45A29E;
+					text-align: center;
+				}
+
+h3 			{	
+					color: #C3073F;
+					text-align: center;
+				}
+
+h4 			{
+					color: #FFCB9A;
+					text-align: center;
+				}
+
+p 			{
+					color: #C5C6C7;
+					font-family: "Times New Roman";
+					font-size: 16px;
+				}
+
+ul li 		{
+					color: #6E6658
+				}
+			
+/* Make image transparent during mouseover */
+img:hover	{	
+					opacity: 0.6;
+				}
+
+.center		{
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			
+span.boldtext	
+			{
+					font-weight: bold;
+				}
+				
+span.italictext	
+			{
+					font-style: italic;
+				}
+/* Tables */
+
+div>table 
+			{
+					float: left;
+					margin-right: 25px;
+					margin-left: 50px;
+					
+				}
+table
+			{
+					table-layout: fixed;
+					width: 45%;
+					border: 2px solid #FFCB9A;
+					border-collapse: collapse;
+				}
+caption
+			{
+					padding: 7px 10px 10px 10px;
+					text-transform: uppercase;
+					font-family: Arial;
+					font-weight: bold;
+					font-size: 16px;
+					text-align: center;
+					background-color: #C5C6C7;
+					border: 2px solid #FFCB9A;
+					vertical-align: middle;
+				}
+th, td
+			{
+					padding: 7px 10px 10px 10px;
+					border: 2px solid #FFCB9A;
+					border-top: 2px solid #FFCB9A;
+					background-color: #C5C6C7;
+					text-align: left;
+					vertical-align: middle;
+				}
+/*				
+th
+			{
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+					font-size: 90%;
+					border-bottom: 2px solid #FFCB9A;
+					border-top: 2px solid #FFCB9A;
+					text-align: left;
+			}
+*/
+td:hover
+			{
+					background-color:#c3e6e5;
+				}
+				
+.money
+			{
+					text-align: right;
+				}
+/* FORMS  */
+				
+form
+			{
+					color: #FFCB9A;
+				
+				}
+fieldset 	
+			{
+					display: block;
+					margin-left: 2px;
+					margin-right: 2px;
+					padding-top: 0.35em;
+					padding-bottom: 0.625em;
+					padding-left: 0.75em;
+					padding-right: 0.75em;
+					border: 2px groove;
+					width: 47%;
+					float: left;
+				}
+
+
+/* Colors section:
+		#0B0C10		Dark Black				Background;
+		#1F2833		Dark Grey				HR; Table Borders; H1 Background
+		#C5C6C7		Light Grey				Normal Text;
+		#66FCF1		Seafoam Green			h1;
+		#45A29E		Dark Seafoam Green		h2; Navbar Button Hover
+		#3500D3		Neon Blue				
+		#C3073F		Rose Red				h3
+		#FFCB9A		Bronze					h4; table borders;
+		#DA7B93		Rose Pink
+		#8860D0		Vibrant Purple
+		#4F4A41		Dark Brown
+		#6E6658		Light Brown				Lists	
+		#333		Dark Grey				Navbar background
+		#f9f9f9		Alabaster				Dropdown Content
+*/
+
